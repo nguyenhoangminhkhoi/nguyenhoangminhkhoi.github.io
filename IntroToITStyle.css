@@ -1,0 +1,100 @@
+.heading {
+    position:relative;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    -ms-flex-align:center;
+    align-items:center;
+    -ms-flex-pack:justify;
+    justify-content:space-between;
+    padding:.5rem 1rem
+}
+p.homepage{
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.headingIntro{
+    font-size: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar {
+    padding-bottom: .5rem 1rem  ;
+}
+.bgColor{
+    background-color: rgb(41, 41, 41);
+}
+.bgColor a:hover{
+    color: rgb(243, 239, 239);
+    ;
+}
+.navB{
+    color: rgb(165, 162, 162);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.nav-link{
+    color: rgb(165, 162, 162);
+}
+:hover{
+    color: rgb(53, 53, 53);
+}
+.b1{
+    background-color: rgb(55, 53, 53);
+}
+.divIntro{
+    margin-right: 130px;
+    margin-left: 130px ;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    margin-top: auto;
+    background-origin: padding-box;
+}
+.Whatis{
+    background-color: wheat;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.divDes{
+    margin-left: 10%;
+    margin-right: 10%
+}
+.divhomepage{
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    padding: 4rem 2rem;
+    border-bottom-left-radius: 2cm;
+    border-bottom-right-radius: 2cm;
+}
+.jumbo {
+    padding: 4rem 2rem;
+    background-color: #e9ecef;
+    border-top-left-radius: 2cm;
+    border-top-right-radius: 2cm;
+}
+.borderR{
+    margin-top: 6%
+}
+.divVCS{
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    padding: 4rem 2rem;
+    border-bottom-left-radius: 2cm;
+    border-bottom-right-radius: 2cm;
+}
+img {
+    margin: auto;
+    max-width: 100%;
+    height: 300px!important;
+    object-fit: contain;
+    box-shadow: none!important;
+    display: block;
+    margin: 0 auto!important;
+    float: unset!important;
+}
+p.VCS {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.headingVCS {
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
