@@ -1,12 +1,5 @@
 import turtle
 
-def draw_line(t, lg, w):
-    t.pensize(w)
-    for i in range(1):
-        t.forward(lg)
-        t.left(90)
-        t.forward(20)
-
 win = turtle.Screen()
 win.bgcolor('white')
 turt = turtle.Turtle()
@@ -16,16 +9,44 @@ turt.penup()
 turt.back(100)
 turt.pendown()
 
-val = 10 
 
+x_y = -180
+y_y = -60
+
+val_y = 0
+
+for i in range(1):
+    turt.up()
+    turt.goto(170, y_y)
+    turt.down()
+    turt.back(350)
+    turt.left(90)
+    turt.forward(300)
+    
 for i in range(10):
-    val += 10
-    draw_line(turt, 100, 5)
-    turt.write(str(val), align="center",font=("Times new roman",12, "normal"))
-    turt.penup()
-    turt.back(100)
-    turt.pendown()
-   
+    turt.up()
+    y_y += 30
+    turt.goto(x_y, y_y)
+    for i in range(1):
+        turt.down()
+        turt.goto(-210, y_y)
+        val_y += 10
+        turt.write(str(val_y), font=("Arial",12, "normal"))
+x_x_a = -115
+turt.up()
+turt.goto(x_x_a, -60)
+turt.goto(-120,-60)
+turt.down()
+def draw_block(t, sz):
+    t.forward(sz)
+    t.goto(x_x_b, 140)
+    t.goto(x_x_b,-60)
+x_x_b = -70 
+for i in range(5):
+    draw_block(turt, 200)
+    x_x_b += 50
+    
+
     
     
 
