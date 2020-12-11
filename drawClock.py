@@ -1,21 +1,39 @@
 import turtle
 import random
 import math
-import time
+from time import localtime
 import datetime as dt
+"""
+attribute = ['hour', 'minute', 'second']
+
+def tiktok():
+    record = localtime()
+
+    line['hour'].seth(record.hour % 12 * 30 + record.minute / 2 + record.second / 120)
+    line['minute'].seth(record.minute * 6 + record.second / 10)
+    line['second'].seth(record.second * 6)
+
+    ontimer(tiktok, 1000)
+"""
+def hands(color, pensize, hideturtle):
+    hands = turtle.Turtle()
+    line.color(color)
+    line.pensize(pensize)
+    line.hideturtle(hideturtle)
 
 window = turtle.Screen()
 window.bgcolor("white")
 window.tracer(0)
 window.screensize(400)
 
-
-line_s = dt.datetime.now().second
+line_s = hands['red', 3, 0]
+"""
+line_s = line['second']
 line_s = turtle.Turtle()
 line_s.color("red")
 line_s.pensize(3)
 line_s.hideturtle()
-
+"""
 line_m = dt.datetime.now().minute
 line_m = turtle.Turtle()
 line_m.color("black")
