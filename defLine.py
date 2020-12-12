@@ -10,7 +10,7 @@ def line(t, color, pensize, speed):
 
 win = turtle.Screen()
 win.screensize(400)
-win.tracer(0)
+win.tracer(10)
 
 line_s = turtle.Turtle()
 line_m = turtle.Turtle()
@@ -39,23 +39,20 @@ def draw_clk(t, sz, sec, agl):
         t.up()
         t.goto(0, 0)
         t.right(agl)
-
 draw_clk(turt, 210, 60, 6)  
-line_s_length = 200
-angle_1 = 30
-while True:
-    line_s.clear()
-    line_s.up()
-    line_s.home()
-    line_s.down()
-    x = line_s_length * math.sin(math.radians(angle_1))
-    y = line_s_length * math.cos(math.radians(angle_1))
-    line_s.goto(x, y)
-    angle_1 += 6
-
-    time.sleep(0.05) 
-
-
-
+val = 13
+for i in range(12):
+    val -= 1
+    turt.up()
+    turt.left(90)             
+    turt.forward(190)
+    turt.down()
+    turt.forward(30)
+    turt.up()
+    turt.forward(20) 
+    turt.write(str(val), align="center", font=("Arial",12, "normal"))       
+    turt.up()          
+    turt.goto(0, 0)         
+    turt.right(60)
 
 win.exitonclick()

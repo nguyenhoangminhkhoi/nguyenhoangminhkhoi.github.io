@@ -39,14 +39,17 @@ radius = 200
 angle_1 = 360 / seconds
 val = 13
 
-for i in range(seconds):      
-    turt.up()             
+for i in range(hours): 
+    val -= 1     
+    turt.up()
+    turt.left(90)             
     turt.forward(radius)
     turt.down()
-    turt.forward(10)        
+    turt.forward(10) 
+    turt.write(str(val), align="center",font=("Arial",12, "normal"))       
     turt.up()          
     turt.goto(0, 0)         
-    turt.right(angle_1)
+    turt.right(60)
         
 for i in range (1):
     line_s.left(90)
