@@ -13,7 +13,6 @@ line_s.color("red")
 line_s.pensize(3)
 line_s.hideturtle()
 
-line_m = time.time()
 line_m = turtle.Turtle()
 line_m.color("black")
 line_m.pensize(5)
@@ -38,7 +37,8 @@ hours = 12
 radius = 200
 angle_1 = 360 / seconds
 val = 13
-
+angle_m = 6
+angle_h = 6
 for i in range(hours): 
     val -= 1     
     turt.up()
@@ -54,12 +54,17 @@ for i in range(hours):
 for i in range (1):
     line_s.left(90)
     line_s.forward(line_s_length)
+    line_m.left(90)
     line_m.forward(line_m_length)
     line_h.left(90)
     line_h.forward(line_h_length)
 
-
+s_counter = 0
+m_counter = 0
+h_counter = 0
 while True:
+    s_counter+=1
+    
     line_s.clear()
     line_s.up()
     line_s.home()
@@ -70,29 +75,29 @@ while True:
     angle_1 += 6
     
 
-    time.sleep(0.05)
+    time.sleep(0.001)
     
-    if line_s == 60:
-        line_s = 0
+    if s_counter % 60 == 0:
+       
+        print(m_counter)
         line_m.clear()
         line_m.up()
         line_m.home()
         line_m.down()
-        x = line_m_length * math.sin(math.radians(angle_1))
-        y = line_m_length * math.cos(math.radians(angle_1))
+        x = line_m_length * math.sin(math.radians(angle_m))
+        y = line_m_length * math.cos(math.radians(angle_m))
         line_m.goto(x, y)
-        angle_1 += 6
-    
-    if line_m == 15:
-        line_h == 0.25
+        angle_m += 6
+       
+    if s_counter % 720 == 0:
         line_h.clear()
         line_h.up()
         line_h.home()
         line_h.down()
-        x = line_h_length * math.sin(math.radians(angle_1))
-        y = line_h_length * math.cos(math.radians(angle_1))
+        x = line_h_length * math.sin(math.radians(angle_h))
+        y = line_h_length * math.cos(math.radians(angle_h))
         line_h.goto(x, y)
-        angle_1 += 7.5
+        angle_h += 6
     
     window.update()
 
