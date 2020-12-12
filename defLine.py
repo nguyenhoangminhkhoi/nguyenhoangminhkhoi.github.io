@@ -39,13 +39,14 @@ def draw_clk(t, sz, sec, agl):
         t.up()
         t.goto(0, 0)
         t.right(agl)
-draw_clk(turt, 210, 60, 6)  
+sz = 250        
+draw_clk(turt, sz, 60, 6)  
 val = 13
 for i in range(12):
     val -= 1
     turt.up()
     turt.left(90)             
-    turt.forward(190)
+    turt.forward(sz)
     turt.down()
     turt.forward(30)
     turt.up()
