@@ -9,7 +9,6 @@ turt.penup()
 turt.back(100)
 turt.pendown()
 
-
 x_y = -180
 y_y = -60
 
